@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <title>Ken Burns Fullscreen Gallery Slideshow By Tean</title>
+          
+        <link rel="stylesheet" type="text/css" href="css/audioPlayer_tr.css" />
+        <link rel="stylesheet" type="text/css" href="css/playlistBottomInside_multiple.css" />
+        <link rel="stylesheet" type="text/css" href="css/ie.css" />
+
+        <script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
+        <script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
+        <script type="text/javascript" src="js/jquery.address.js"></script>
+        <script type="text/javascript" src="js/jquery.cj-swipe.js"></script>
+        <script type="text/javascript" src="http://www.youtube.com/player_api"></script>
+        <script type="text/javascript" src="js/jquery.apYoutubePlayer.min.js"></script>
+        <script type="text/javascript" src="js/jquery.apVimeoPlayer.min.js"></script>
+        <script type="text/javascript" src="js/jquery.func.js"></script>
+        <script type="text/javascript" src="js/soundmanager2-nodebug-jsmin.js" ></script>
+        <script type="text/javascript" src="js/jquery.apPlaylistManager.min.js"></script>
+        <script type="text/javascript" src="js/jquery.apTextScroller.min.js"></script>
+        <script type="text/javascript" src="js/jquery.html5audio.min.js"></script>
+        <script type="text/javascript" src="js/jquery.multiGallery.min.js"></script>
+        <script type="text/javascript" src="js/script.js"></script>
+
+  </head>
+      <body>  
+      
+         <div id="componentWrapper">
+
+              <div class="music_toggle"><img src='media/data/audio_icons/music.png' width='30' height='30' alt='music_toggle'/></div>
+              
+              <!-- audio player -->
+              <div class="audioPlayer">
+            
+                 <div class="playerHolder">
+                     
+                      <div class="player_controls">
+
+                          <!-- previous -->
+                          <div class="controls_prev"><img src='media/data/audio_icons/prev.png' width='30' height='30' alt='controls_prev'/></div>
+                          <!-- next -->
+                          <div class="controls_next"><img src='media/data/audio_icons/next.png' width='30' height='30' alt='controls_next'/></div>
+                          <!-- pause/play -->
+                          <div class="controls_toggle"><img src='media/data/audio_icons/play.png' width='30' height='30' alt='controls_toggle'/></div>
+                          
+                          <!-- volume -->
+                          <div class="player_volume"><img src='media/data/audio_icons/volume.png' width='30' height='30' alt='player_volume'/></div>
+                          <div class="volume_seekbar">
+                             <div class="volume_bg"></div>
+                             <div class="volume_level"></div>
+                          </div>
+    
+                      </div>
+                 
+                 </div>
+                 
+                 <!-- song name -->
+                 <div class="player_mediaName_Mask">
+                 	 <div class="player_mediaName">Artist Name - Artist Title</div>
+                 </div>
+                 
+              </div>
+
+             <div id="playlist_list">
+
+                 <ul id='audio_playlist1'>
+                     <li class= "playlistItem" data-type='local' data-mp3Path="media/audio/1/Tim_McMorris_-_A_Bright_And_Hopeful_Future.mp3" 		 data-oggPath="media/audio/1/Tim_McMorris_-_A_Bright_And_Hopeful_Future.ogg"><a class="playlistNonSelected" href='#'>Tim McMorris - A Bright And Hopeful Future</a></li>
+                     <li class= "playlistItem" data-type='local' data-mp3Path="media/audio/1/Tim_McMorris_-_Be_My_Valentine.mp3" 					 data-oggPath="media/audio/1/Tim_McMorris_-_Be_My_Valentine.ogg"><a class="playlistNonSelected" href='#'>Tim McMorris - Be My Valentine</a></li>
+                     <li class= "playlistItem" data-type='local' data-mp3Path="media/audio/1/Tim_McMorris_-_Give_Our_Dreams_Their_Wings_To_Fly.mp3"  data-oggPath="media/audio/1/Tim_McMorris_-_Give_Our_Dreams_Their_Wings_To_Fly.ogg"><a class="playlistNonSelected" href='#'>Tim McMorris - Give Our Dreams Their Wings To Fly</a></li>
+                 </ul>
+
+             </div>
+
+         </div>
+
+     </body>
+</html>
