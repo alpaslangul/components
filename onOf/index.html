@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        body { margin : 0; }
+
+        #movie-player {
+
+        }
+        input {
+            display: inline-block;
+        }
+
+        .overlay {
+            width : 100%;
+            color : #fff;
+            text-align: center;
+            display: inline-block;
+        }
+    </style>
+    <script type="text/javascript" src="js/jquery-1.10.2.js"></script>
+    <script type="text/javascript" src="js/jquery-ui.js"></script>
+</head>
+<body>
+
+    <div id="movie-player">
+        <p class="overlay">Sinema Salonu</p>
+        <input type="button" value="Kapat" id="Kapat">
+        <input type="button" value="Ac" id="Ac">
+
+    </div>
+
+
+
+    <script>
+        $(document).ready(function(){
+            docH = $(window).height();
+            console.log(docH);
+
+            $("#movie-player").css('height', docH + 'px');
+        });
+
+        $('#Kapat').click(function(){
+            $('#movie-player').animate({
+                backgroundColor: 'rgba(0,0,0,1)',
+                color : '#fff'
+            });
+        });
+
+        $('#Ac').click(function(){
+            $('#movie-player').animate({
+                backgroundColor: 'rgba(255,234,90,0.4)',
+                color : '#000'
+            });
+        });
+    </script>
+</body>
+</html>
